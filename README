@@ -1,6 +1,18 @@
 Apache Flex BlazeDS
 ===================
 
+# This branch is a part of CCLAS's in-house work to make use of flex messaging with Jakarta support
+
+To resolve this library into your local CCLAS project, you may need to add the following repository setting into your `.m2/settings.xml`:
+
+```xml
+<repository>
+    <id>nexus-3rd-party</id>
+    <name>Datamine Nexus 3rd Party</name>
+    <url>http://172.22.22.9/nexus/content/repositories/thirdparty</url>
+</repository>
+
+
     Apache Flex SDK is an application development framework for easily building
     Flash-based applications for mobile devices, web browsers, and desktops.
 
@@ -91,8 +103,9 @@ Software Dependencies
 Using the Binary Distribution
 -----------------------------
 
-    Binary artifacts of Apache BlazeDS are available on Apache's public Maven 
-	repositories.
+    Binary artifacts of Apache BlazeDS are available private repositories:
+
+    http://172.22.22.9/nexus/content/repositories/thirdparty
 
     By adding a Dependency to the following Maven artifact the binary 
 	version of Apache BlazeDS will automatically be downloaded.

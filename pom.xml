@@ -29,7 +29,7 @@
 
     <groupId>org.apache.flex.blazeds</groupId>
     <artifactId>blazeds</artifactId>
-    <version>5.0.0-SNAPSHOT</version>
+    <version>5.0.0</version>
     <packaging>pom</packaging>
 
     <name>Apache Flex - BlazeDS</name>
@@ -67,7 +67,14 @@
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/flex-blazeds.git</developerConnection>
         <url>https://git-wip-us.apache.org/repos/asf/flex-blazeds.git</url>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-3rd-party</id>
+            <url>http://172.22.22.9/nexus/content/repositories/thirdparty</url>
+        </repository>
+    </distributionManagement>
 
     <modules>
         <module>common</module>
